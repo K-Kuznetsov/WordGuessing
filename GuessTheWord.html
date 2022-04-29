@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="words.js"></script>
+<script type="text/javascript" src="functions.js"></script>
+</head>
+<body>
+<p><b>To start the game, choose a word length. If you cannot guess the word, choose another.</b></p>
+<p><b>You gain 1000 points per letter if the word is correct.</b></p>
+<button class="button" onclick="easy();">5 letters</button>
+<button class="button" onclick="medium();">6-7 letters</button>
+<button class="button" onclick="difficult();">7+ letters</button><br><br>
+<p><span id="word"></span></p>
+<button class="button" onclick="backSpace();">Backspace</button><br><br>
+<button class="button" id="check" onclick="checkWord();">Check word</button><br><br>
+<p><span id="reply"></span></p>
+<span id="wordLength" style="visibility: hidden ; font-weight : bold"></span>
+<p>Score: <span id="score"></span></p>
+<ul id="Results">
+</ul>
+</body>
+</html>
